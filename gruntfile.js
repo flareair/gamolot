@@ -7,14 +7,14 @@ module.exports = function(grunt) {
         src: [
           'js/*.js'
         ],
-        dest: 'js/production.js'
+        dest: 'js/script.js'
       }
     },
 
     uglify: {
       build: {
-        src: 'js/production.js',
-        dest: 'js/production.js'
+        src: 'js/script.js',
+        dest: 'js/script.js'
       }
     },
 
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          'styles/css/production.css': 'styles/less/style.less'
+          'style.css': 'less/style.less'
         }
       }
     },
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
         }
       },
       css: {
-        files: ['styles/less/*.less'],
+        files: ['less/*.less'],
         tasks: ['less'],
         options: {
           spawn: false
