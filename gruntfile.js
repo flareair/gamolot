@@ -5,16 +5,17 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
+          'js/jquery-1.11.1.min.js',
           'js/*.js'
         ],
-        dest: 'js/script.js'
+        dest: 'js/production.js'
       }
     },
 
     uglify: {
       build: {
-        src: 'js/script.js',
-        dest: 'js/script.js'
+        src: 'js/production.js',
+        dest: 'js/production.js'
       }
     },
 
@@ -25,7 +26,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          'style.css': 'less/style.less'
+          'production.css': 'less/style.less'
         }
       }
     },
