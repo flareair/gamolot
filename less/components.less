@@ -1,14 +1,28 @@
-.navbar {
-  font-family: 'Impact', Arial;
-  font-size: @font-size-h3;
+.top-menu {
+  .impact-heading;
   margin-bottom: 10px;
-  text-transform: uppercase;
   .container {
-    padding: 0;
+    padding-left: 0;
   }
 }
 
 .second-menu {
-  height: 50px;
-  background-color: @gray;
+  .impact-heading(@size: 16px);
+  .navbar-collapse {
+    padding: 0;
+  }
+  li {
+    display: table;
+    height: 50px;
+    max-width: 130px;
+    text-align: center;
+
+    a {
+      padding: 5px;
+      display: table-cell;
+      vertical-align: middle;
+      // line-height: 50px;
+
+    }
+  }
 }
