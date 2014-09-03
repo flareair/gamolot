@@ -12,9 +12,14 @@
 }
 
 .phone-number {
+  height: 100px;
+  width: 100%;
+  display: table;
   color: @gray-light;
-  padding-top: 35px;
-  padding-bottom: 25px;
+  p {
+    display: table-cell;
+    vertical-align: middle;
+  }
   span {
     .impact-heading(@color: @gray-light; @size: 24px);
     &.primary {
@@ -24,29 +29,34 @@
 }
 
 .header-price {
-  padding-top: 40px;
-  padding-right: 30px;
+  height: 100px;
+  width: 100%;
+  display: table;
+  text-align: center;
+  a {
+    display: table-cell;
+    vertical-align: middle;
+
+  }
   a:hover {
     h3 {
       color: @brand-primary;
     }
     text-decoration: none;
-    .arrow {
-      background: url(images/arrows.png) 0 -72px;
-    }
   }
   h3 {
     margin: 0;
-    margin-top: 3px;
-    color: @gray;
+    .impact-heading;
   }
 }
 
 .search {
+  position: relative;
   height: 40px;
-  margin-right: -15px;
+  // margin-right: -15px;
   padding: 6px;
-  background-color: @gray-light;
+  background: linear-gradient(to top, @gray-lighter, white);;
+  border: 1px solid @gray-light;
   label {
     margin-left: 15px;
     margin-right: 15px;
@@ -61,7 +71,7 @@
   }
   button {
     position: absolute;
-    right: -20px;
+    right: -15px;
     top: 0px;
     padding: 0;
     height: 40px;
@@ -73,7 +83,7 @@
 }
 .buy {
   height: 40px;
-  margin-left: -15px;
+  // margin-left: -15px;
   padding-right: 15px;
   padding-top: 10px;
   background-color: @brand-primary;

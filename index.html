@@ -3,6 +3,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>GAMolot</title>
 		<link rel="stylesheet" href="production.css">
     <script src="js/production.js"></script>
@@ -18,9 +19,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
           <i class="fa fa-home"></i>
           <select>
               <option value="one">Санкт-Петербург</option>
@@ -28,7 +26,8 @@
               <option value="three">Новгород</option>
               <option value="four">Петрозаводск</option>
           </select>
-          </ul>
+        </div>
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Главная</a></li>
             <li><a href="#">Запчасти для спецтехники</a></li>
@@ -45,70 +44,60 @@
         <div class="col-md-5">
           <img src="images/logo.png" alt="">
         </div>
-        <div class="col-md-7">
-          <div class="row col-right">
-            <div class="col-md-offset-2 col-md-5 phone-number text-center">
+        <div class="col-md-4">
+            <div class="phone-number text-center">
               <p>
-                тел.:<span>+7 (812) </span><span class="primary">333-28-25</span>
+                тел.:<span>+7 (812) </span><span class="primary">333-28-25</span><br>
+                С 8 до 24:00 без обеда и выходных.
               </p>
             </div>
-            <div class="col-md-5 header-price text-center">
+            <div class="search">
+              <label for="searchInput">Поиск</label>
+              <input type="text" id="searchInput">
+              <button type="submit"></button>
+            </div>
+        </div>
+        <div class="col-md-3">
+          <div class="header-price">
             <a href="#">
-            <button class="arrow arrow-right pull-right"></button>
               <h3>
-                СКАЧАТЬ ПРАЙС ЛИСТ
-                
+                Скачать прайс <i class="fa fa-download"></i>
               </h3>
-            </div>
             </a>
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-7 padding-left-zero">
-                  <div class="search">
-                    <label for="searchInput">Поиск</label>
-                    <input type="text" id="searchInput">
-                    <button type="submit"></button>
-                  </div>
-                </div>
-                <div class="col-md-5">
-                  <div class="buy">
-                  <a href="#">
-                    <button class="arrow arrow-right pull-right"></button>
-                    <h3 class="text-center">Сделать заказ</h3>
-                  </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="buy">
+            <a href="#">
+              <h3 class="text-center">Сделать заказ</h3>
+            </a>
           </div>
         </div>
       </div>
       <div class="navbar navbar-inverse second-menu" role="navigation">
         <!-- <div class="container"> -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               <li><a href="#">Ковши и быстросъемы</a></li>
               <li><a href="#">Коронки и адаптеры</a></li>
-              <li><a href="#">Защита<br>ковшей</a></li>
+              <li><a href="#">Защита ковшей</a></li>
               <li><a href="#">Пальцы и втулки</a></li>
               <li><a href="#">Гидромоторы</a></li>
               <li><a href="#">Пики для гидромоторов</a></li>
-              <li><a href="#">Ходовая<br>часть</a></li>
+              <li><a href="#">Ходовая часть</a></li>
               <li><a href="#">Гидравлика и агрегаты</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         <!-- </div> -->
       </div>
       <div class="row">
-        <div class="col-md-5 padding-right-zero">
+        <div class="col-md-5">
           <div class="carousel-brand">
             <h2>General Attachment <button class="arrow arrow-right pull-right"></button></h2>
 
@@ -122,7 +111,7 @@
         </div>
         <div class="col-md-7">
           <div class="row">
-            <div class="col-md-7 padding-left-zero padding-right-zero">
+            <div class="col-md-7">
               <div class="brands">
                 <h2>
                   <button class="arrow arrow-left pull-left"></button>
@@ -148,7 +137,7 @@
                 </table>
               </div>
             </div>
-            <div class="col-md-5 padding-left-zero">
+            <div class="col-md-5">
               <div class="details-search">
                 <h2>Подбор запчастей</h2>
                 <input placeholder="Бренд">
