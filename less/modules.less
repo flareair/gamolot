@@ -2,6 +2,7 @@
   h3 {
     margin-top: 0;
     margin-bottom: 10px;
+    .impact-heading;
   }
   ul {
     // font-size: 10px;
@@ -12,11 +13,10 @@
 
 .phone-number {
   color: @gray-light;
-  margin-top: 35px;
-  margin-bottom: 25px;
+  padding-top: 35px;
+  padding-bottom: 25px;
   span {
-    font-family: @impact;
-    font-size: 24px;
+    .impact-heading(@color: @gray-light; @size: 24px);
     &.primary {
       color: @brand-primary;
     }
@@ -24,11 +24,21 @@
 }
 
 .header-price {
+  padding-top: 40px;
+  padding-right: 30px;
+  a:hover {
+    h3 {
+      color: @brand-primary;
+    }
+    text-decoration: none;
+    .arrow {
+      background: url(images/arrows.png) 0 -72px;
+    }
+  }
   h3 {
-    color: @gray;
     margin: 0;
-    margin-top: 43px;
-    margin-bottom: 25px;
+    margin-top: 3px;
+    color: @gray;
   }
 }
 
@@ -41,8 +51,7 @@
     margin-left: 15px;
     margin-right: 15px;
     // padding-top: 5px;
-    font-family: @impact;
-    font-size: 18px;
+    .impact-heading;
   }
   input {
     width: 70%;
@@ -65,11 +74,59 @@
 .buy {
   height: 40px;
   margin-left: -15px;
+  padding-right: 15px;
+  padding-top: 10px;
   background-color: @brand-primary;
-  color: white;
+  a:hover {
+    text-decoration: none;
+    h3 {
+      color: @gray-lighter;
+    }
+  }
+  .arrow:hover {
+    background: url(images/arrows.png) 0 -24px;
+  }
   h3 {
     margin: 0;
-    padding-top: 10px;
+    margin-top: 3px;
+    color: white;
   }
 
+}
+
+.carousel-brand {
+  background-color: @gray-lighter;
+  box-shadow: 0 0 2px @gray; /* Параметры тени */
+  border: 3px solid white;
+  .padding-block;
+  h2 {
+    font-family: Verdana;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  .carousel {
+    .padding-block;
+    background-color: white;
+  }
+}
+
+.brands {
+  .padding-block;
+  padding-top: 18px;
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    .impact-heading(@size: 24px);
+  }
+}
+
+.details-search {
+  padding-top: 18px;
+  background-color: @brand-primary;
+  .padding-block;
+  h2 {
+    margin-top: 0;
+    .impact-heading(@color: white; @size: 24px;);
+  }
 }
