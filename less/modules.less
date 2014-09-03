@@ -109,6 +109,13 @@
     .padding-block;
     background-color: white;
   }
+  p{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 15px;
+
+  }
 }
 
 .brands {
@@ -119,6 +126,11 @@
     margin-top: 0;
     .impact-heading(@size: 24px);
   }
+  td {
+    padding-bottom: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 }
 
 .details-search {
@@ -128,5 +140,22 @@
   h2 {
     margin-top: 0;
     .impact-heading(@color: white; @size: 24px;);
+    margin-bottom: 12px;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .submit {
+    margin-top: 35px;
+  }
+  a:hover {
+    text-decoration: none;
+    .submit {
+      color: @gray-lighter;
+    }
+  }
+  .arrow:hover {
+    background: url(images/arrows.png) 0 -24px;
   }
 }
