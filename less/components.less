@@ -1,9 +1,16 @@
 
 .top-menu {
-  .impact-heading;
+  .impact-heading(@size: 16px);
   margin-bottom: 15px;
   .container {
     padding-left: 0;
+  }
+  select {
+    background-color: inherit;
+    margin-top: 10px;
+    &:focus {
+      border: none;
+    } 
   }
 }
 
