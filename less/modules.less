@@ -146,6 +146,7 @@
   .padding-block;
   .gray-gradient;
   .bordered;
+  border-right: none;
   .phone-number {
     height: auto;
     width: inherit;
@@ -162,6 +163,7 @@
   .padding-block;
   .gray-gradient;
   .bordered;
+  border-right: none;
   h2 {
     margin: 0;
     .impact-heading(@size: 24px)
@@ -193,7 +195,19 @@
 }
 
 .widgets-support {
+  height: 98px;
+  display: table;
+  width: 100%;
   .padding-block;
   .gray-gradient;
   .bordered;
+  a{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h2 {
+    margin: 0;
+
+    .impact-heading(@size: 24px);
+  }
 }
