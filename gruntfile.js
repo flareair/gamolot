@@ -5,8 +5,10 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'js/jquery-1.11.1.min.js',
-          'js/*.js'
+          'js/jquery-2.1.1.js',
+          'js/bootstrap.js',
+          'js/bxslider/jquery.bxslider.js',
+          'js/script.js'
         ],
         dest: 'js/production.js'
       }
@@ -34,13 +36,13 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ['js/*.js'],
-        tasks: ['concat', 'uglify'],
+        tasks: ['concat'],
         options: {
           spawn: false
         }
       },
       css: {
-        files: ['less/*.less'],
+        files: ['less/**/*.less'],
         tasks: ['less'],
         options: {
           spawn: false
@@ -55,6 +57,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask('default', ['concat','uglify','less']);
-  grunt.registerTask('dev', ['watch']);
-
+  grunt.registerTask('dev', ['concat','less']);
 };

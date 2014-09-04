@@ -13,7 +13,7 @@
     <div class="top-menu navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse-2">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -27,7 +27,7 @@
               <option value="four">Петрозаводск</option>
           </select>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse collapse-2">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Главная</a></li>
             <li><a href="#">Запчасти для спецтехники</a></li>
@@ -67,7 +67,8 @@
           </div>
           <div class="buy">
             <a href="#">
-              <h3 class="text-center">Сделать заказ</h3>
+
+              <h3 class="text-center">Сделать заказ<i class="fa fa-angle-right pull-right"></i></h3>
             </a>
           </div>
         </div>
@@ -75,14 +76,14 @@
       <div class="navbar navbar-inverse second-menu" role="navigation">
         <!-- <div class="container"> -->
           <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
         </div>
-          <div class="collapse navbar-collapse">
+          <div class="collapse navbar-collapse collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="#">Ковши и быстросъемы</a></li>
               <li><a href="#">Коронки и адаптеры</a></li>
@@ -99,54 +100,104 @@
       <div class="row">
         <div class="col-md-5">
           <div class="carousel-brand">
-            <h2>General Attachment <button class="arrow arrow-right pull-right"></button></h2>
-
             <div class="carousel">
-              <img src="images/mainpage-carousel.png" class="img-responsive">
+              <ul class="bxslider">
+                <li><img src="http://placehold.it/700x400" title="Компания General Attachment является лидером на рынке запчастей"></li>
+                <li><img src="http://placehold.it/700x400" title="caption 1"></li>
+                <li><img src="http://placehold.it/700x400" title="caption 1"></li>
+                <li><img src="http://placehold.it/700x400" title="caption 1"></li>
+                <li><img src="http://placehold.it/700x400" title="caption 1"></li>
+              </ul>
             </div>
-            <p>
-              Запчасти для спецтехники Volvo, Caterpillar, Hitachi, Comatsu, JCB.
-            </p>
+
           </div>
         </div>
-        <div class="col-md-7">
-          <div class="row">
-            <div class="col-md-7">
-              <div class="brands">
-                <h2>
-                  <button class="arrow arrow-left pull-left"></button>
-                  Производители
-                  <button class="arrow arrow-right pull-right"></button>
-                </h2>
-                <table>
-                  <tr>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                    <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
-                  </tr>
-                </table>
-              </div>
+        <div class="col-md-4">
+          <div class="brands">
+            <table>
+              <tr>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+              </tr>
+              <tr>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+                <td><a href="#"><img src="http://placehold.it/115x80" class="img-responsive"></a></td>
+              </tr>
+            </table>
+            <a href="#">
+              <i class="fa fa-3x fa-angle-right pull-right"></i>
+              <p>
+                У нас есть запасные части для техники всех производителей.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="details-search">
+            <h2>Подбор запчастей</h2>
+            <input placeholder="Бренд">
+            <input placeholder="Модель">
+            <input placeholder="Категория">
+            <input placeholder="Узел">
+            <a href="#">
+
+              <h2 class="submit">Подобрать<i class="fa fa-angle-right pull-right"></i></h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row widgets">
+        <div class="col-md-5">
+          <div class="widgets-phone">
+            <i class="fa fa-4x fa-phone pull-left"></i>
+            <div class="phone-number">
+              <p>
+                тел.:<span>+7 (812) </span><span class="primary">333-28-25</span><br>
+                С 8 до 24:00 без обеда и выходных.
+              </p>
             </div>
-            <div class="col-md-5">
-              <div class="details-search">
-                <h2>Подбор запчастей</h2>
-                <input placeholder="Бренд">
-                <input placeholder="Модель">
-                <input placeholder="Категория">
-                <input placeholder="Узел">
-                <a href="#"><h2 class="submit">Подобрать<button class="arrow arrow-right pull-right"></button></h2></a>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widgets-zakaz">
+<!--             <h2>
+              <span class="brand-primary">Заказ</span> в 1 клик
+            </h2>
+            <p>Менеджер перезвонит вам, узнает все детали и сам оформит заказ.</p> -->
+            <table>
+              <tr>
+                <td class="caption">
+                  <h2>
+                    <span class="brand-primary">Заказ</span> в 1 клик
+                  </h2>
+                </td>
+                <td>
+                   <p>Менеджер перезвонит вам, узнает все детали и сам оформит заказ.</p>
+                </td>
+              </tr>
+            </table>
+            <form class="form-inline" role="form">
+              <!-- <div class="form-group"> -->
+                <label for="">+7</label>
+                <input type="text" size="3">
+              <!-- </div> -->
+              <!-- <div class="form-group"> -->
+                <input type="text" class="number" size="6">
+              <!-- </div> -->
+              <button type="submit" class="pull-right">Заказать <i class="fa fa-angle-right"></i></button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="widgets-support">
+            
           </div>
         </div>
       </div>

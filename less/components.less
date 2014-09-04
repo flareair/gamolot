@@ -1,4 +1,11 @@
-
+input {
+  &:focus {
+    outline: none;
+  }
+}
+a:hover {
+  text-decoration: none;
+}
 .top-menu {
   .impact-heading(@size: 16px);
   margin-bottom: 15px;
@@ -8,6 +15,7 @@
   select {
     background-color: inherit;
     margin-top: 5px;
+    margin-bottom: 5px;
     &:focus {
       outline: none;
     } 
@@ -16,7 +24,9 @@
 
 .second-menu {
   .impact-heading(@size: 14px);
-  margin-bottom: 0;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 15px 0px @gray;
+  // border: none;
   .navbar-collapse {
     padding: 0;
     padding-left: 10px;
@@ -24,16 +34,17 @@
   li {
     display: table;
     height: 50px;
-    // max-width: 130px;
     text-align: center;
 
     a {
       padding: 5px;
       display: table-cell;
       vertical-align: middle;
-      // line-height: 50px;
-
     }
   }
+}
+
+.widgets {
+  margin-top: 5px;
 }
 
