@@ -211,3 +211,38 @@
     .impact-heading(@size: 24px);
   }
 }
+
+
+.sales {
+  .sales-caption {
+    .padding-block;
+    margin-bottom: 15px;
+    background-color: @brand-primary;
+    .impact-heading(@color: white);
+  }
+  .sales-item {
+    &-center {
+      border-left: 1px solid @gray-light;
+      border-right: 1px solid @gray-light;
+    }
+    .padding-block;
+    text-align: center;
+    h2 {
+      margin: 0;
+      .impact-heading(@color: @gray);
+      margin-bottom: 5px;
+    }
+    a {
+      text-decoration: underline;
+      color: @gray;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border: 5px solid white;
+      outline: 1px solid @gray-light;
+    }
+  }
+}
