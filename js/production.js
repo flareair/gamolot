@@ -12649,8 +12649,12 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 })(jQuery);
 
 $(document).ready(function(){
-  $('.bxslider').bxSlider({
+  $('.bxslider-main').bxSlider({
     controls: false,
     captions: true
+  });
+  $('.bxslider-item').bxSlider({
+    controls: true,
+    pager: false
   });
 });
