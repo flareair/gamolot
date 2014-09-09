@@ -22,7 +22,6 @@
   .tab-content {
     .padding-block;
     border-top: 10px solid @brand-primary;
-    margin-bottom: 15px;
     table {
       // width: 100%;
       td {
@@ -38,5 +37,66 @@
         }
       }
     }
+  }
+}
+
+.category-list {
+  .category-list-caption {
+    .main-content .main-content-caption;
+  }
+  .category-list-content {
+    .category-item {
+      .items-featured .items-featured-card;
+      border-bottom: 1px solid @gray-light;
+    }
+  }
+}
+
+.filters {
+  .filters-caption {
+    .main-content .main-content-caption;
+  }
+  .filter {
+    margin-bottom: 5px;
+    .filter-button {
+      .impact-heading(@size:16px; @color: white);
+      background-color: @gray;
+      padding: 10px 15px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .filter-body {
+      .padding-block;
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        a {
+          color: @gray;
+          text-decoration: underline;
+          &.active {
+            color: @brand-primary;
+          }
+        }
+      } 
+    }
+  }
+}
+
+.category-description {
+  .category-description-caption {
+    .main-content .main-content-caption;
+    margin-bottom: 0;
+  }
+  .col-left {
+    .padding-block;
+    img {
+      outline: 1px solid @gray-light;
+      border: 3px solid white;
+    }
+  }
+  .col-right {
+    .padding-block;
   }
 }
