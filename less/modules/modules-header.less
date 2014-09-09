@@ -1,0 +1,87 @@
+.phone-number {
+  height: 100px;
+  width: 100%;
+  display: table;
+  color: @gray-light;
+  p {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  span {
+    .impact-heading(@color: @gray-light; @size: 24px);
+    &.primary {
+      color: @brand-primary;
+    }
+  }  
+}
+
+.header-price {
+  height: 100px;
+  width: 100%;
+  display: table;
+  text-align: center;
+  a {
+    display: table-cell;
+    vertical-align: middle;
+
+  }
+  a:hover {
+    h3 {
+      color: @brand-primary;
+    }
+    text-decoration: none;
+  }
+  h3 {
+    margin: 0;
+    .impact-heading;
+  }
+}
+
+.search {
+  position: relative;
+  height: 40px;
+  // margin-right: -15px;
+  padding: 6px;
+  .gray-gradient;
+  .bordered;
+  label {
+    margin-left: 15px;
+    margin-right: 15px;
+    // padding-top: 5px;
+    .impact-heading;
+  }
+  input {
+    width: 70%;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    padding: 0;
+    height: 40px;
+    width: 38px;
+    background: url(images/search.png);
+    border: none;
+    z-index: 1000;
+  }
+}
+.buy {
+  height: 40px;
+  // margin-left: -15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  background-color: @brand-primary;
+  a:hover {
+    h3 {
+      color: @gray-lighter;
+    }
+  }
+  h3 {
+    margin: 0;
+    margin-top: 3px;
+    .impact-heading(@color: white; @size: 16px);
+  }
+}

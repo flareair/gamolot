@@ -1,0 +1,160 @@
+.widgets-phone {
+  height: 98px;
+  .padding-block;
+  .gray-gradient;
+  .bordered;
+  border-right: none;
+  .phone-number {
+    height: auto;
+    width: inherit;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .fa {
+    padding-top: 10px;
+  }
+}
+
+.widgets-zakaz {
+  // height: 98px;
+  .padding-block;
+  .gray-gradient;
+  .bordered;
+  border-right: none;
+  h2 {
+    margin: 0;
+    .impact-heading(@size: 24px)
+  }
+  table p {
+    font-size: 10px;
+  }
+  .caption {
+    width: 50%;
+    vertical-align: top;
+  }
+  form {
+    label {
+      .impact-heading(@size: 16px)
+    }
+    input {
+      margin-left: 7px;
+    }
+    .number {
+      // width: 40%;
+    }
+    button {
+      height: 26px;
+      .gray-gradient;
+      .bordered;
+      margin-left: 7px;
+    }
+  }
+}
+
+.widgets-support {
+  height: 98px;
+  display: table;
+  width: 100%;
+  .padding-block;
+  .gray-gradient;
+  .bordered;
+  a{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h2 {
+    margin: 0;
+
+    .impact-heading(@size: 24px);
+  }
+}
+
+
+
+
+.info-block {
+  .padding-block;
+  .gray-gradient;
+  .bordered;
+  a {
+    color: @gray;
+  }
+  margin-bottom: 15px;
+  table {
+    .text {
+      padding-left: 15px;
+      vertical-align: top;
+      h3 {
+        margin: 0;
+        .impact-heading;
+      }
+      p {
+        margin-bottom: 0;
+        margin-top: 5px;
+        font-size: 12px;
+      }
+      ul {
+        font-size: 12px;
+        padding-left: 5px;
+        margin-bottom: 0;
+        li span {
+          position: relative;
+          left: -5px;
+        }
+      }
+    }
+  }
+}
+
+.news-block {
+  .news-caption {
+    .padding-block;
+    .gray-gradient;
+    .bordered;
+    .impact-heading(@color: @gray);
+  }
+  .news-content {
+    .padding-block;
+  }
+  .news-content-block {
+    margin-bottom: 15px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.info-tabs {
+  ul li a {
+    .impact-heading;
+    .bordered;
+    .gray-gradient;
+    border-radius: 5px 5px 0 0;
+    &:hover {
+      background: @brand-primary;
+      color: white;
+      border: 1px solid @brand-primary;
+    }
+  }
+  ul li.active a {
+    border: 1px solid @brand-primary;
+    background: @brand-primary;
+    color: white;
+    &:hover {
+      background: @brand-primary;
+      color: white;
+      border: 1px solid @brand-primary;
+    }
+  }
+  .tab-content {
+    .padding-block;
+    border-top: 10px solid @brand-primary;
+    border-bottom: 1px solid @gray-light;
+    border-left: 1px solid @gray-light;
+    border-right: 1px solid @gray-light;
+    margin-bottom: 15px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

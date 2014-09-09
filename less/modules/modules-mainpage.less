@@ -1,0 +1,99 @@
+.carousel-brand {
+  background-color: @gray-lighter;
+  .padding-block;
+  border: 1px solid @gray-light;
+}
+
+.brands {
+  .padding-block;
+  table {
+    margin-bottom: 5px;
+  }
+  td {
+    padding-bottom: 6px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+.details-search {
+  padding-top: 18px;
+  background-color: @brand-primary;
+  .padding-block;
+  h2 {
+    margin-top: 0;
+    .impact-heading(@color: white; @size: 24px;);
+    margin-bottom: 12px;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+  .submit {
+    margin-top: 35px;
+  }
+  a:hover {
+    text-decoration: none;
+    .submit {
+      color: @gray-lighter;
+    }
+  }
+}
+
+.sales {
+  margin-bottom: 15px;
+  .sales-caption {
+    .padding-block;
+    margin-bottom: 15px;
+    background-color: @brand-primary;
+    .impact-heading(@color: white);
+  }
+  .sales-item {
+    &-center {
+      border-left: 1px solid @gray-light;
+      border-right: 1px solid @gray-light;
+    }
+    .padding-block;
+    text-align: center;
+    h2 {
+      margin: 0;
+      .impact-heading(@color: @gray);
+      margin-bottom: 5px;
+    }
+    .sales-item-price{
+      font-size: 24px;
+      color: @brand-primary;
+      .old {
+        text-decoration: line-through;
+        color: @gray-light; 
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: @gray;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border: 5px solid white;
+      outline: 1px solid @gray-lighter;
+    }
+    .button-group {
+      margin: 15px 0;
+      button {
+        height: 35px;
+        width: 35px;
+        background-color: @gray-lighter;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: inset 0 0 10px @gray-light;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

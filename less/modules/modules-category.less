@@ -1,0 +1,42 @@
+.category-tabs {
+  ul li a {
+    .impact-heading(@color: white);
+    background-color: @gray;
+    border-radius: 5px 5px 0 0;
+    &:hover {
+      background: @brand-primary;
+      color: white;
+      border: 1px solid @brand-primary;
+    }
+  }
+  ul li.active a {
+    border: 1px solid @brand-primary;
+    background: @brand-primary;
+    color: white;
+    &:hover {
+      background: @brand-primary;
+      color: white;
+      border: 1px solid @brand-primary;
+    }
+  }
+  .tab-content {
+    .padding-block;
+    border-top: 10px solid @brand-primary;
+    margin-bottom: 15px;
+    table {
+      // width: 100%;
+      td {
+        width: 20%;
+        padding: 5px;
+        text-align: left;
+        vertical-align: top;
+        text-transform: uppercase;
+        font-weight: bold;
+        ul {
+          margin-bottom: 0;
+          margin-left: 18px;
+        }
+      }
+    }
+  }
+}
